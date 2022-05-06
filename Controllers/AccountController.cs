@@ -116,7 +116,10 @@ namespace OnlineBankingAPI.Controllers
         {
             var response = _accountService.GetCustomerAccounts(identityNumber);
             if (response.IsSuccess)
-                return Ok(response);
+            {
+                var cleanedAccounts = _mapper.Map<IList<GetAccountModel>>(response.Data);
+                return Ok(cleanedAccounts);
+            }                
             else
                 return BadRequest(response);
         }
