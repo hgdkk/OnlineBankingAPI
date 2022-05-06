@@ -28,3 +28,9 @@ Body (Raw-JsonFormat):
 
 
 Now you can access to methods.
+
+TABLES
+
+
+![image](https://user-images.githubusercontent.com/13198189/167134586-bcf1365e-af70-40a9-87f4-a2b70449b4ad.png)
+
